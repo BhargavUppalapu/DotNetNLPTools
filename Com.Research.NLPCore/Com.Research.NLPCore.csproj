@@ -32,76 +32,78 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Com.Research.NLPCore">
+      <HintPath>..\..\..\Dlls\Com.Research.NLPCore.dll</HintPath>
+    </Reference>
     <Reference Include="IKVM.AWT.WinForms">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.AWT.WinForms.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.AWT.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Beans">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Beans.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Beans.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Charsets">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Charsets.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Charsets.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Corba">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Corba.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Corba.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Core">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Core.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Jdbc">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Jdbc.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Jdbc.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Management">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Management.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Management.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Media">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Media.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Media.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Misc">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Misc.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Misc.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Naming">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Naming.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Naming.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Remoting">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Remoting.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Remoting.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Security">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Security.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Security.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.SwingAWT">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.SwingAWT.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Text">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Text.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Text.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Util">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.Util.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Util.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.API">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.OpenJDK.XML.API.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.XML.API.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.Runtime.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime.JNI">
-      <HintPath>..\resources\3rdPartyDlls\IKVM\IKVM.Runtime.JNI.dll</HintPath>
+      <HintPath>..\..\..\Dlls\IKVM.Runtime.JNI.dll</HintPath>
     </Reference>
     <Reference Include="OpenNLP">
-      <HintPath>..\resources\3rdPartyDlls\Stanford\OpenNLP.dll</HintPath>
+      <HintPath>..\..\..\Dlls\OpenNLP.dll</HintPath>
     </Reference>
     <Reference Include="SharpEntropy">
-      <HintPath>..\resources\3rdPartyDlls\Stanford\SharpEntropy.dll</HintPath>
+      <HintPath>..\..\..\Dlls\SharpEntropy.dll</HintPath>
     </Reference>
-    <Reference Include="stanford-ner, Version=3.3.1.1, Culture=neutral, PublicKeyToken=f2aa5350432048ad, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\resources\Dlls\Stanford\stanford-ner.dll</HintPath>
+    <Reference Include="stanford-ner">
+      <HintPath>..\..\..\Dlls\stanford-ner.dll</HintPath>
     </Reference>
     <Reference Include="stanford-parser">
-      <HintPath>..\resources\Dlls\Stanford\stanford-parser.dll</HintPath>
+      <HintPath>..\..\..\Dlls\stanford-parser.dll</HintPath>
       <Aliases>ParserGlobal</Aliases>
     </Reference>
     <Reference Include="stanford-postagger">
-      <HintPath>..\resources\Dlls\Stanford\stanford-postagger.dll</HintPath>
+      <HintPath>..\..\..\Dlls\stanford-postagger.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

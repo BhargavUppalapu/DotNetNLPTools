@@ -56,7 +56,7 @@ namespace Com.Research.NLPCore.DependencyParser
             System.Console.WriteLine();
 
             var tp = new TreePrint("penn,typedDependenciesCollapsed");
-            string parsedout = tp.printTree(parse);
+            string parsedout = "";
             return parsedout;
             
         }
