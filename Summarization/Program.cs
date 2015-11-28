@@ -9,7 +9,8 @@ namespace Summarization
     {
         static void Main(string[] args)
         {
-
+            //Summerize
+            ////Extract the Most important and Good to have from Job description..
 
         }
     }

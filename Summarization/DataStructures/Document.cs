@@ -13,7 +13,6 @@ namespace Summarization.DataStructures
         public string POSTag;
         public int nameGroup;
         public List<string> trends = new List<string>();
-
     }
 
     
@@ -22,7 +21,6 @@ namespace Summarization.DataStructures
         public string sent ="";
         public string parsedOut = "";
         public List<wordDetails> words = new List<wordDetails>();
-
         public int rank;
     }
 

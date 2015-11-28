@@ -11,10 +11,21 @@ namespace Summarization.Summarizer
         {
             string summary = "";
 
+            //               TFIDF.Transform(doc);
+            //Sentence Length
+            //Imporrtant Words count
+            //Upper Case letters count
+            //Nouns Count
+            //Verbs Count
+            //Adjectives Count
+            //Number of the Sentence.
 
+            //Caliculate the Sentence Score...
 
+            
 
             return summary;
         }
     }
 }
+
