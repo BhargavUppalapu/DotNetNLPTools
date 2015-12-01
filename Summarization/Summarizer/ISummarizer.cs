@@ -9,7 +9,7 @@ namespace Summarization.Summarizer
 {
     public interface ISummarizer
     {
-        string Summarize(Document doc,Configuration config);
+        void Summarize(Document doc,Configuration config);
 
 
     }
