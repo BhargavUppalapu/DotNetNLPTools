@@ -38,75 +38,96 @@
     <Reference Include="Com.Research.NLPCore">
       <HintPath>..\..\..\Dlls\Com.Research.NLPCore.dll</HintPath>
     </Reference>
-    <Reference Include="IKVM.AWT.WinForms">
-      <HintPath>..\..\..\Dlls\IKVM.AWT.WinForms.dll</HintPath>
-    </Reference>
     <Reference Include="IKVM.OpenJDK.Beans">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Beans.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Beans.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Charsets">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Charsets.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Charsets.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Corba">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Corba.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Corba.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Core">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Core.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Jdbc">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Jdbc.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Jdbc.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Management">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Management.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Management.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Media">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Media.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Media.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Misc">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Misc.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Misc.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Naming">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Naming.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Naming.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Remoting">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Remoting.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Remoting.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Security">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Security.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Security.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.SwingAWT">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.SwingAWT.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Text">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Text.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Tools.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Util">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.Util.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Util.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.API">
-      <HintPath>..\..\..\Dlls\IKVM.OpenJDK.XML.API.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Reflection">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime">
-      <HintPath>..\..\..\Dlls\IKVM.Runtime.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime.JNI">
-      <HintPath>..\..\..\Dlls\IKVM.Runtime.JNI.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.Runtime.JNI.dll</HintPath>
     </Reference>
     <Reference Include="OpenNLP">
-      <HintPath>..\..\..\Dlls\OpenNLP.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\OpenNLP.dll</HintPath>
     </Reference>
     <Reference Include="SharpEntropy">
-      <HintPath>..\..\..\Dlls\SharpEntropy.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\SharpEntropy.dll</HintPath>
     </Reference>
     <Reference Include="stanford-ner">
-      <HintPath>..\..\..\Dlls\stanford-ner.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\stanford-ner.dll</HintPath>
     </Reference>
     <Reference Include="stanford-parser">
-      <HintPath>..\..\..\Dlls\stanford-parser.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\stanford-parser.dll</HintPath>
       <Aliases>ParserGlobal</Aliases>
     </Reference>
     <Reference Include="stanford-postagger">
-      <HintPath>..\..\..\Dlls\stanford-postagger.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\stanford-postagger.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
