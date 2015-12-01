@@ -8,6 +8,7 @@ using Com.Research.NLPCore.POSTagging;
 using Com.Research.NLPCore.Tokenization;
 using Com.Research.NLPCore.Stemming;
 using Com.Research.NLPCore.SentenceDetector;
+using Com.Research.NLPCore.DependencyParser;
 using Summarization.Summarizer;
 
 
@@ -16,11 +17,7 @@ namespace Summarization.Utils
     public class Configuration
     {
         
-        public string InputFileName;
-        public string OutputFolder;
-        public string NaesForTrends;
-
-
+        public string CorpusFolder;
         private String _configName;
         public String ConfigName
         {
@@ -56,6 +53,23 @@ namespace Summarization.Utils
         public IsentenceDetector SentenceDetector
         {
             get { return _mySentenceDetector; }
+        }
+
+
+
+
+        /// <summary>
+        /// Name for SentenceDetector
+        /// </summary>
+        private string _parserName = null;
+        private string _parserModelFile;
+        private bool _isParserCreated = false;
+        private readonly FactoryClass<IParser> _myParserFactory = new FactoryClass<IParser>();
+        private IParser _myParser;
+
+        public IParser Parser
+        {
+            get { return _myParser; }
         }
 
 
@@ -107,6 +121,8 @@ namespace Summarization.Utils
         }
 
 
+
+
         public void InitiateModules()
         {
 
@@ -130,12 +146,22 @@ namespace Summarization.Utils
             if (!string.IsNullOrEmpty(_sentneceDetectorName))
                 _isSentenceDetectorCreated = CreateSentenceDetector();
 
+            ////if (!string.IsNullOrEmpty(_parserName))
+            ////    _isParserCreated= CreateParser();
+
         }
 
+
+        public bool CreateParser()
+        {
+            _myParser = _myParserFactory.Create(_parserName);
+            return (_myParser.LoadModel(_parserModelFile));
+            
+        }
         public bool CreateSentenceDetector()
         {
             _mySentenceDetector = _mySentenceDetectorFactory.Create(_sentneceDetectorName);
-            return (_mySentenceDetector.LoadModel(_sentenceDetectorModelFile) != null) ? true : false;
+            return (_mySentenceDetector.LoadModel(_sentenceDetectorModelFile) );
         }
         public bool CreateStemmer()
         {
@@ -161,7 +187,7 @@ namespace Summarization.Utils
             return (_myposTagger.LoadModel(_posTaggerModelFile));
         }
 
-        //Summarizer..
+       
         public void InitializeFromIni(string configureFile)
         {
             IniParser parser = new IniParser(@configureFile);
@@ -175,9 +201,10 @@ namespace Summarization.Utils
             _sentenceDetectorModelFile = parser.GetSetting("appSettings", "COMPANY.Modules.SentenceDetectorModelFile");
             _posTaggerModelFile = parser.GetSetting("appSettings", "COMPANY.Modules.POSTaggerModelFile");
             _posTaggerName = parser.GetSetting("appSettings", "COMPANY.Modules.POSTagging");
-            
-            InputFileName = parser.GetSetting("appSettings", "COMPANY.Modules.InputFile");
-            OutputFolder = parser.GetSetting("appSettings", "COMPANY.Modules.OutPutFolder");
+            _parserName = parser.GetSetting("appSettings", "COMPANY.Modules.Parser");
+            _parserModelFile = parser.GetSetting("appSettings", "COMPANY.Modules.ParserModelFile");
+            CorpusFolder = parser.GetSetting("appSettings", "COMPANY.Modules.CorpusFoler");
+             
             InitiateModules();
         }
 
