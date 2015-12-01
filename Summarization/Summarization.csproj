@@ -34,71 +34,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IKVM.AWT.WinForms">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.AWT.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Beans">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Beans.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Charsets">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Charsets.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Corba">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Corba.dll</HintPath>
+    <Reference Include="Centivus.EnglishStemmer">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\Centivus.EnglishStemmer.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Core">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Core.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Jdbc">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Jdbc.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Management">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Management.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Media">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Media.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Misc">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Misc.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Naming">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Naming.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Remoting">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Remoting.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Security">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.SwingAWT">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.SwingAWT.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Text">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Text.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Util">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.Util.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.XML.API">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.OpenJDK.XML.API.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Jdbc.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.Runtime.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime.JNI">
-      <HintPath>..\resources\Dlls\IKVM\IKVM.Runtime.JNI.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.Runtime.JNI.dll</HintPath>
     </Reference>
     <Reference Include="OpenNLP">
-      <HintPath>..\resources\Dlls\Stanford\OpenNLP.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\OpenNLP.dll</HintPath>
     </Reference>
     <Reference Include="SharpEntropy">
-      <HintPath>..\resources\Dlls\Stanford\SharpEntropy.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\SharpEntropy.dll</HintPath>
     </Reference>
-    <Reference Include="stanford-ner">
-      <HintPath>..\resources\Dlls\Stanford\stanford-ner.dll</HintPath>
+    <Reference Include="stanford-parser, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\stanford-parser.dll</HintPath>
     </Reference>
     <Reference Include="stanford-postagger">
-      <HintPath>..\resources\Dlls\Stanford\stanford-postagger.dll</HintPath>
+      <HintPath>..\resources\Dlls\3rdPartyDlls\stanford-postagger.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -110,10 +72,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStructures\Document.cs" />
+    <Compile Include="Preprocessor.cs" />
+    <Compile Include="Processing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Summarizer\ExtractionSummarizer.cs" />
+    <Compile Include="Summarizer\ISummarizer.cs" />
+    <Compile Include="Summarizer\StopWords.cs" />
+    <Compile Include="Summarizer\TFIDF.cs" />
     <Compile Include="Utils\Configuration.cs" />
     <Compile Include="Utils\IniParser.cs" />
+    <Compile Include="Utils\L2Normalization.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Com.Research.NLPCore\Com.Research.NLPCore.csproj">
+      <Project>{10E061A0-953F-41F2-A92B-A0BE2F41DAAE}</Project>
+      <Name>Com.Research.NLPCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

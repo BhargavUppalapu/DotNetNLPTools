@@ -28,8 +28,7 @@ namespace Com.Research.NLPCore.Tokenization
             }
             catch (Exception e)
             {
-                Logging.ErrorLogger.logError(e.Message);
-                return null;
+               return null;
 
             }
         }

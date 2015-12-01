@@ -6,14 +6,22 @@ using Com.Research.NLPCore;
 using Com.Research.NLPCore.NamedEntityRecognition;
 using Com.Research.NLPCore.POSTagging;
 using Com.Research.NLPCore.Tokenization;
+using Com.Research.NLPCore.Stemming;
+using Com.Research.NLPCore.SentenceDetector;
+using Summarization.Summarizer;
 
 
 namespace Summarization.Utils
 {
-    class Configuration
+    public class Configuration
     {
-        private String _configName;
+        
+        public string InputFileName;
+        public string OutputFolder;
+        public string NaesForTrends;
 
+
+        private String _configName;
         public String ConfigName
         {
             get { return _configName; }
@@ -36,13 +44,45 @@ namespace Summarization.Utils
         }
 
 
+        /// <summary>
+        /// Name for SentenceDetector
+        /// </summary>
+        private string _sentneceDetectorName = null;
+        private string _sentenceDetectorModelFile;
+        private bool _isSentenceDetectorCreated = false;
+        private readonly FactoryClass<IsentenceDetector> _mySentenceDetectorFactory = new FactoryClass<IsentenceDetector>();
+        private IsentenceDetector _mySentenceDetector;
+
+        public IsentenceDetector SentenceDetector
+        {
+            get { return _mySentenceDetector; }
+        }
+
+
+
+        /// <summary>
+        /// Name for Stemmer
+        /// </summary>
+        private string _stemmerName = null;
+        private bool _isStemmerCreated = false;
+        private readonly FactoryClass<IStemmer> _myStemmerFactory = new FactoryClass<IStemmer>();
+        private IStemmer _myStemmer;
+
+        public IStemmer Stemmer
+        {
+            get { return _myStemmer; }
+        }
+
+
+
 
         /// <summary>
         /// Name for POS Tagger
         /// </summary>
-        private string _posTaggerNameName = null;
+        private string _posTaggerName = null;
         private bool _isposTaggerCreated = false;
         private string _posTaggerModelFile;
+
         private readonly FactoryClass<IPOSTagger> _myPOSTaggerFactory = new FactoryClass<IPOSTagger>();
         private IPOSTagger _myposTagger;
 
@@ -52,10 +92,19 @@ namespace Summarization.Utils
         }
 
 
+        /// <summary>
+        /// Name for Summarizer
+        /// </summary>
+        private string _summarizerName = null;
+        private bool _issummarizerCreated = false;
+        private string _summarizerModelFile;
+        private readonly FactoryClass<ISummarizer> _mySummarizerFactory = new FactoryClass<ISummarizer>();
+        private ISummarizer _mysummarizer;
 
-        public string InputFileName;
-        public string OutputFolder;
-        public string NaesForTrends;
+        public ISummarizer Summarizer
+        {
+            get { return _mysummarizer; }
+        }
 
 
         public void InitiateModules()
@@ -65,44 +114,73 @@ namespace Summarization.Utils
             //Initializing Stanford CRFNER model.
             if (!string.IsNullOrEmpty(_tokenizerName))
                 _isTokenizerCreated = CreateTokenizer();
-            //OutputLogInfo(_isTokenizerCreated, "Tokenizer");
-
             
-            if (!string.IsNullOrEmpty(_posTaggerNameName))
+            if (!string.IsNullOrEmpty(_posTaggerName))
                 _isposTaggerCreated = CreatePOSTagger();
 
 
+            if (!string.IsNullOrEmpty(_summarizerName))
+                _issummarizerCreated = CreateSummerizer();
+
+
+            if (!string.IsNullOrEmpty(_stemmerName))
+                _isStemmerCreated = CreateStemmer();
+
+
+            if (!string.IsNullOrEmpty(_sentneceDetectorName))
+                _isSentenceDetectorCreated = CreateSentenceDetector();
+
         }
 
+        public bool CreateSentenceDetector()
+        {
+            _mySentenceDetector = _mySentenceDetectorFactory.Create(_sentneceDetectorName);
+            return (_mySentenceDetector.LoadModel(_sentenceDetectorModelFile) != null) ? true : false;
+        }
+        public bool CreateStemmer()
+        {
+            _myStemmer = _myStemmerFactory.Create(_stemmerName);
+            return (_myStemmer != null) ? true : false;
+        }
+        public bool CreateSummerizer()
+        {
+            _mysummarizer = _mySummarizerFactory.Create(_summarizerName);
+            return (_mysummarizer != null) ? true : false;
+        }
 
         public bool CreateTokenizer()
         {
-
             _myTokenizer = _myTokenizerFactory.Create(_tokenizerName);
             return (_myTokenizer != null) ? true : false;
-
         }
 
         public bool CreatePOSTagger()
         {
             Console.WriteLine("Loading POS Tagger Model. This may take few seconds.");
-            _myposTagger = _myPOSTaggerFactory.Create(_posTaggerNameName);
+            _myposTagger = _myPOSTaggerFactory.Create(_posTaggerName);
             return (_myposTagger.LoadModel(_posTaggerModelFile));
-
         }
 
-
+        //Summarizer..
         public void InitializeFromIni(string configureFile)
         {
             IniParser parser = new IniParser(@configureFile);
+            
             _tokenizerName = parser.GetSetting("appSettings", "COMPANY.Modules.Tokenizer");
+            
+            _stemmerName = parser.GetSetting("appSettings", "COMPANY.Modules.Stemmer");
+            
+            _summarizerName = parser.GetSetting("appSettings", "COMPANY.Modules.Summerizer");
+            _sentneceDetectorName = parser.GetSetting("appSettings", "COMPANY.Modules.SenteceDetector");
+            _sentenceDetectorModelFile = parser.GetSetting("appSettings", "COMPANY.Modules.SentenceDetectorModelFile");
             _posTaggerModelFile = parser.GetSetting("appSettings", "COMPANY.Modules.POSTaggerModelFile");
-            _posTaggerNameName = parser.GetSetting("appSettings", "COMPANY.Modules.POSTagging");
-            NaesForTrends = parser.GetSetting("appSettings", "COMPANY.Modules.NamesForTrends");
+            _posTaggerName = parser.GetSetting("appSettings", "COMPANY.Modules.POSTagging");
+            
             InputFileName = parser.GetSetting("appSettings", "COMPANY.Modules.InputFile");
             OutputFolder = parser.GetSetting("appSettings", "COMPANY.Modules.OutPutFolder");
             InitiateModules();
         }
+
 
 
 

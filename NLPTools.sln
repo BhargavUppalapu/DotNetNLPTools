@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Summarization", "Summarization\Summarization.csproj", "{CE64ED1E-B992-4796-8BA5-48C9B41863A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Research.NLPCore", "..\DotNetNLPToos\trunk\Com.Research.NLPCore\Com.Research.NLPCore.csproj", "{10E061A0-953F-41F2-A92B-A0BE2F41DAAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Research.NLPCore", "Com.Research.NLPCore\Com.Research.NLPCore.csproj", "{10E061A0-953F-41F2-A92B-A0BE2F41DAAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

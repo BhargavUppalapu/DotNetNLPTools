@@ -11,7 +11,10 @@ namespace Summarization
         {
             //Summerize
             ////Extract the Most important and Good to have from Job description..
+            Processing P = new Processing();
+            P.InitfromConfig(@"../../../resources/configuration/config.ini");
 
+            P.ProcessWorkItem(@"../../../resources/Corpus/Job-1" , @"../../../resources/Corpus/Job-1_Summary");
         }
     }
 }

@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Centivus.EnglishStemmer">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\Centivus.EnglishStemmer.dll</HintPath>
+    </Reference>
     <Reference Include="Com.Research.NLPCore">
       <HintPath>..\..\..\Dlls\Com.Research.NLPCore.dll</HintPath>
     </Reference>
@@ -117,19 +120,18 @@
     <Compile Include="DependencyParser\IParser.cs" />
     <Compile Include="DependencyParser\StanfordDependecyParser.cs" />
     <Compile Include="FactoryClass.cs" />
-    <Compile Include="Logging\ErrorLogger.cs" />
     <Compile Include="NamedEntityRecognition\INamedEntityRecognizer.cs" />
     <Compile Include="NamedEntityRecognition\StanfordNamedEntityRecognizer.cs" />
     <Compile Include="POSTagging\IPOSTagger.cs" />
     <Compile Include="POSTagging\OpenNLPPOSTagger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SentenceDetector\IsentenceDetector.cs" />
+    <Compile Include="SentenceDetector\OpenNLPSentenceDetector.cs" />
+    <Compile Include="Stemming\EnglishStemmer.cs" />
+    <Compile Include="Stemming\IStemmer.cs" />
     <Compile Include="Tokenization\ITokenizer.cs" />
-    <Compile Include="Tokenization\RegexTokenizer.cs" />
     <Compile Include="Tokenization\StanfordPTBTokenizer.cs" />
     <Compile Include="Tokenization\TokenizerOptions.cs" />
-    <Compile Include="WordSegmentaion\edge.cs" />
-    <Compile Include="WordSegmentaion\IWordSegmentation.cs" />
-    <Compile Include="WordSegmentaion\ViterbiUnigramWordSegmenter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
