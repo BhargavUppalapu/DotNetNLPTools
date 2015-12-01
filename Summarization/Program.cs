@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace Summarization
 {
@@ -14,7 +15,10 @@ namespace Summarization
             Processing P = new Processing();
             P.InitfromConfig(@"../../../resources/configuration/config.ini");
 
-            P.ProcessWorkItem(@"../../../resources/Corpus/Job-1" , @"../../../resources/Corpus/Job-1_Summary");
+            string targetDirectory = @"../../../resources/Corpus/";
+            string[] fileEntries = Directory.GetFiles(targetDirectory);
+            foreach (string fileName in fileEntries)
+                        P.ProcessWorkItem(fileName, fileName+"_Summary");
         }
     }
 }

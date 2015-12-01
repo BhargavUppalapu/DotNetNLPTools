@@ -37,11 +37,74 @@
     <Reference Include="Centivus.EnglishStemmer">
       <HintPath>..\resources\Dlls\3rdPartyDlls\Centivus.EnglishStemmer.dll</HintPath>
     </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Charsets">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Charsets.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Corba">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Corba.dll</HintPath>
+    </Reference>
     <Reference Include="IKVM.OpenJDK.Core">
       <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Jdbc">
       <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Jdbc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Media">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Naming">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Naming.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Reflection">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime">
       <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.Runtime.dll</HintPath>
@@ -55,9 +118,12 @@
     <Reference Include="SharpEntropy">
       <HintPath>..\resources\Dlls\3rdPartyDlls\SharpEntropy.dll</HintPath>
     </Reference>
-    <Reference Include="stanford-parser, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="stanford-ner">
+      <HintPath>..\resources\Dlls\3rdPartyDlls\stanford-ner.dll</HintPath>
+    </Reference>
+    <Reference Include="stanford-parser">
       <HintPath>..\resources\Dlls\3rdPartyDlls\stanford-parser.dll</HintPath>
+      <Aliases>ParserGlobal</Aliases>
     </Reference>
     <Reference Include="stanford-postagger">
       <HintPath>..\resources\Dlls\3rdPartyDlls\stanford-postagger.dll</HintPath>
@@ -72,7 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStructures\Document.cs" />
-    <Compile Include="Preprocessor.cs" />
+    <Compile Include="Utils\Preprocessor.cs" />
     <Compile Include="Processing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,6 +156,7 @@
       <Name>Com.Research.NLPCore</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
