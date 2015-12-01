@@ -38,6 +38,7 @@ namespace Com.Research.NLPCore.DependencyParser
 
         public string parse(string sentence)
         {
+            string parsedout = "";
             // This option shows loading and using an explicit tokenizer
             var sent2 = sentence;
             var tokenizerFactory = PTBTokenizer.factory(new CoreLabelTokenFactory(), "");
@@ -52,11 +53,14 @@ namespace Com.Research.NLPCore.DependencyParser
 
             System.Console.WriteLine();
             for (var it = tdl.iterator(); it.hasNext(); )
-                System.Console.WriteLine("{0}", it.next());
-            System.Console.WriteLine();
+            {
+                parsedout = parsedout + "\n" +it.next();
+            }
+                //System.Console.WriteLine("{0}", it.next());
+            //System.Console.WriteLine();
 
-            var tp = new TreePrint("penn,typedDependenciesCollapsed");
-            string parsedout = "";
+            //var tp = new TreePrint("penn,typedDependenciesCollapsed");
+           
             return parsedout;
             
         }
