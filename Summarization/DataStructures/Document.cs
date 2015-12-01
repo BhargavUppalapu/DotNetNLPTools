@@ -31,9 +31,11 @@ namespace Summarization.DataStructures
         public int upperCaseLettersCount = 0;
         public int NoSent = 0;
         public int JJCount = 0;
-        //public int nounCount = 0;
+        public int nounCount = 0;
         //public int verbCount = 0;
-        public double score = 0;
+        public double Descriptionscore = 0;
+        public double Qualificationscore = 0;
+
         
     }
 
@@ -88,6 +90,10 @@ namespace Summarization.DataStructures
             }
         }
 
+        public string description = "";
+        
+        public string MustHave = "";
+        public string GoodTohave = "";
 
        // public List<Paragraph> paragraphs = new List<Paragraph>();
         public List<Sentence> sentences = new List<Sentence>();
@@ -96,6 +102,8 @@ namespace Summarization.DataStructures
             this.Path = path;
             StreamReader f = new StreamReader(path, System.Text.Encoding.UTF8);
             this.Text = f.ReadToEnd();
+           
+
         }
     }
 
