@@ -89,8 +89,6 @@ namespace Com.Research.NLPCore.NamedEntityRecognition
                 java.util.Properties props = new java.util.Properties();
                 InputStream st = new BufferedInputStream(new FileInputStream(prop));
                 InputStreamReader reader = new InputStreamReader(st, "utf-8");
-
-
                 props.load(reader);
                 _crfModel = new CRFClassifier(props);
 
@@ -125,6 +123,15 @@ namespace Com.Research.NLPCore.NamedEntityRecognition
                 string inputText = string.Join(" ", tokens);
                 //Stanford CRF model applies its own tokenizer
                 string taggedText = _crfModel.classifyWithInlineXML(inputText);
+                // Console.WriteLine("{0}\n", Classifier.classifyToString(S1));
+                /*
+                 var classification = Classifier.classify(S2).toArray();
+
+                for (var i = 0; i < classification.Length; i++)
+                {
+                    Console.WriteLine("{0}\n:{1}\n", i, classification[i]);
+                }
+                 */
                 return taggedText;
             }
             catch (Exception e)

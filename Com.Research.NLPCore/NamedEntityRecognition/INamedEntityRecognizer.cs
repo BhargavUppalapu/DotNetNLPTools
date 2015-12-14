@@ -22,5 +22,6 @@ namespace Com.Research.NLPCore.NamedEntityRecognition
         /// <returns></returns>
         bool LoadModel(string modelFile);
 
+        bool Train(string prop);
     }
 }

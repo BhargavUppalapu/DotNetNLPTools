@@ -35,9 +35,6 @@
     <Reference Include="Centivus.EnglishStemmer">
       <HintPath>..\resources\Dlls\3rdPartyDlls\Centivus.EnglishStemmer.dll</HintPath>
     </Reference>
-    <Reference Include="Com.Research.NLPCore">
-      <HintPath>..\..\..\Dlls\Com.Research.NLPCore.dll</HintPath>
-    </Reference>
     <Reference Include="IKVM.OpenJDK.Beans">
       <HintPath>..\resources\Dlls\3rdPartyDlls\IKVM.OpenJDK.Beans.dll</HintPath>
     </Reference>
