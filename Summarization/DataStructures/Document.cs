@@ -90,6 +90,26 @@ namespace Summarization.DataStructures
             }
         }
 
+
+        /// <summary>
+        /// The content of the document
+        /// </summary>
+        private string _searchString;
+        /// <summary>
+        /// Get the content of the document </summary>
+        /// <returns> the content of the document </returns>
+        public virtual string SearchString
+        {
+            get
+            {
+                return _searchString;
+            }
+            set
+            {
+                _searchString = value;
+            }
+        }
+
         public string description = "";
         
         public string MustHave = "";

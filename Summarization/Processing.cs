@@ -10,14 +10,11 @@ namespace Summarization
     class Processing
     {
         Utils.Configuration _config = new Utils.Configuration();
-        
-
 
         public void ProcessWorkItem(string InputFilePath, string outFilePath)
         {
             FileStream fs1 = new FileStream(outFilePath, FileMode.Create);
             StreamWriter sw1 = new StreamWriter(fs1);
-            
             Document doc = new Document(InputFilePath);
             //Preprocess
             Preprocessor.process(doc, _config);
@@ -31,7 +28,17 @@ namespace Summarization
             sw1.Close();
         }
 
-     
+        public void ProcessSearchStringWorkItem(string InputFilePath, string outFilePath)
+        {
+            FileStream fs1 = new FileStream(outFilePath, FileMode.Create);
+            StreamWriter sw1 = new StreamWriter(fs1);
+            Document doc = new Document(InputFilePath);
+            //Preprocess
+            Preprocessor.extractSearchString(doc);
+            Preprocessor.process(doc, _config);  
+            Preprocessor.PrepareTraining(doc, _config);
+        }
+          
         public Utils.Configuration InitfromConfig(string configurationFile)
         {
             _config.InitializeFromIni(configurationFile);

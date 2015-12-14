@@ -16,9 +16,10 @@ namespace Summarization
             P.InitfromConfig(@"../../../resources/configuration/config.ini");
 
             string targetDirectory = @"../../../resources/Corpus/";
-            string[] fileEntries = Directory.GetFiles(targetDirectory);
+            string[] fileEntries = Directory.GetFiles(targetDirectory + "Pre-Training/");
             foreach (string fileName in fileEntries)
-                        P.ProcessWorkItem(fileName, fileName+"_Summary");
+                        //P.ProcessWorkItem(fileName, fileName+"_Summary");
+                P.ProcessSearchStringWorkItem(fileName, fileName.Replace(".txt","_train.txt"));
         }
     }
 }

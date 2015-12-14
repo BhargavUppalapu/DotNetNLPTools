@@ -94,5 +94,37 @@ namespace Summarization
             }
         }
 
+        public static void PrepareTraining(Document doc, Configuration config)
+        {
+
+            Match m = Regex.Match(doc.Text.ToLower(), doc.SearchString);
+            if (m.Success)
+            {
+                if (m.Value.StartsWith(" "))
+                {
+                    String matched = doc.Text.Substring(0, m.Index + 1) + "<REGEX>" + m.Value.Trim()
+                        + "</REGEX>" + doc.Text.Substring(m.Index + m.Value.Length, doc.Text.Length - m.Index - m.Value.Length);
+                    Console.WriteLine(matched);
+                }
+                else
+                {
+                    String matched = doc.Text.Substring(0, m.Index) + "<REGEX>" + m.Value + "</REGEX>" + doc.Text.Substring(m.Index + m.Value.Length, doc.Text.Length - m.Index - m.Value.Length);
+                    Console.WriteLine(matched);
+                }
+
+            }
+        }
+
+        public static void extractSearchString(Document doc)
+        {
+            string[] paragraphs = Regex.Split(doc.Text, @"(Search String|Search string).*", RegexOptions.Multiline);
+            string[] searchstring = Regex.Split( Regex.Replace( paragraphs[2] ,".*:",""), @"\r\n", RegexOptions.Multiline);
+            doc.SearchString = searchstring[0].Replace(" or ","|").Replace(" and ","|");
+            doc.SearchString   = Regex.Replace(  doc.SearchString,"\r", "");
+            doc.SearchString = Regex.Replace(doc.SearchString, "\n", "");
+            doc.SearchString = doc.SearchString.Replace("\"", "");
+            doc.Text = paragraphs[0];
+           
+        }
     }
 }

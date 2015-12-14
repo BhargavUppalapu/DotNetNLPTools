@@ -138,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStructures\Document.cs" />
+    <Compile Include="SearchEntityExtractor\ISearchEntityExtractor.cs" />
     <Compile Include="Utils\Preprocessor.cs" />
     <Compile Include="Processing.cs" />
     <Compile Include="Program.cs" />
