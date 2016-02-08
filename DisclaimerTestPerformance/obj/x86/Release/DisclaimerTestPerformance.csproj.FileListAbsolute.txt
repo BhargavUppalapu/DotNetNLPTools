@@ -1,0 +1,9 @@
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\obj\x86\Release\DisclaimerTestPerformance.csprojResolveAssemblyReference.cache
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\bin\Release\DisclaimerTestPerformance.exe
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\bin\Release\DisclaimerTestPerformance.pdb
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\bin\Release\CapitalIQ.Research.IntelligentTagging.Global.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\bin\Release\CapitalIQ.Research.IntelligentTagging.TextExtraction.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\bin\Release\TET_dotnet.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\bin\Release\CapitalIQ.Research.IntelligentTagging.VW.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\obj\x86\Release\DisclaimerTestPerformance.exe
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\Training\Disclaimer\DisclaimerTestPerformance\obj\x86\Release\DisclaimerTestPerformance.pdb
