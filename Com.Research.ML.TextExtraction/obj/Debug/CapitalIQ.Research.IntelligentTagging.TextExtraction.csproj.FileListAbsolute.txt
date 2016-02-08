@@ -1,0 +1,17 @@
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.pdb
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.Global.dll
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.VW.dll
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.VW.pdb
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.dll
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.pdb
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\obj\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.csprojResolveAssemblyReference.cache
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\obj\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.pdb
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.dll
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\obj\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.pdb
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.Global.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.VW.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\obj\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\obj\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.pdb
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\obj\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.csprojResolveAssemblyReference.cache

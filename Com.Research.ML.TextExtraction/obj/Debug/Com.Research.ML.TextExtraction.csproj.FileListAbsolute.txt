@@ -1,0 +1,7 @@
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.dll
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.pdb
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.VW.dll
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.TextExtraction\bin\Debug\CapitalIQ.Research.IntelligentTagging.VW.pdb
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.TextExtraction\obj\Debug\Com.Research.ML.TextExtraction.csprojResolveAssemblyReference.cache
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.TextExtraction\obj\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.dll
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.TextExtraction\obj\Debug\CapitalIQ.Research.IntelligentTagging.TextExtraction.pdb

@@ -1,0 +1,1 @@
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.TextExtraction\obj\Release\CapitalIQ.Research.IntelligentTagging.TextExtraction.csprojResolveAssemblyReference.cache
