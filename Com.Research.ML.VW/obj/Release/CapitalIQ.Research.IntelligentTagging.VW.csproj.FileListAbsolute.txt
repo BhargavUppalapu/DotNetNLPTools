@@ -1,0 +1,8 @@
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.VW\bin\Release\CapitalIQ.Research.IntelligentTagging.VW.dll
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.VW\bin\Release\CapitalIQ.Research.IntelligentTagging.VW.pdb
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.VW\obj\Release\CapitalIQ.Research.IntelligentTagging.VW.dll
+C:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.VW\obj\Release\CapitalIQ.Research.IntelligentTagging.VW.pdb
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.VW\bin\Release\CapitalIQ.Research.IntelligentTagging.VW.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.VW\bin\Release\CapitalIQ.Research.IntelligentTagging.VW.pdb
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.VW\obj\Release\CapitalIQ.Research.IntelligentTagging.VW.dll
+D:\SVN\trunk\CapitalIQ.Research.IntelligentTagging\CapitalIQ.Research.IntelligentTagging.VW\obj\Release\CapitalIQ.Research.IntelligentTagging.VW.pdb

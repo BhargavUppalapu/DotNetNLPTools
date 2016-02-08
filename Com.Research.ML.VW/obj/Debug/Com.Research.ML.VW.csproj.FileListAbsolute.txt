@@ -1,0 +1,4 @@
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.VW\bin\Debug\CapitalIQ.Research.IntelligentTagging.VW.dll
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.VW\bin\Debug\CapitalIQ.Research.IntelligentTagging.VW.pdb
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.VW\obj\Debug\CapitalIQ.Research.IntelligentTagging.VW.dll
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.VW\obj\Debug\CapitalIQ.Research.IntelligentTagging.VW.pdb
