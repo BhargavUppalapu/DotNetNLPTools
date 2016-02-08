@@ -1,0 +1,5 @@
+SearchString	java
+SearchString	Administrative Assistant
+SearchString	J2EE
+SearchString	JSP
+SearchString	Apache Tomcat
