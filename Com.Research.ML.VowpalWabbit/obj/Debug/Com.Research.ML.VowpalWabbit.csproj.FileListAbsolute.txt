@@ -1,0 +1,4 @@
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.VowpalWabbit\bin\Debug\Com.Research.ML.VowpalWabbit.dll
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.VowpalWabbit\bin\Debug\Com.Research.ML.VowpalWabbit.pdb
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.VowpalWabbit\obj\Debug\Com.Research.ML.VowpalWabbit.dll
+D:\GitHub\DotNetNLPTools\trunk\Com.Research.ML.VowpalWabbit\obj\Debug\Com.Research.ML.VowpalWabbit.pdb
