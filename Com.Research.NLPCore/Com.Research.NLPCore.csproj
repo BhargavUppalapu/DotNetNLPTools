@@ -135,6 +135,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classification\IClassifier.cs" />
+    <Compile Include="Classification\VWClassifier.cs" />
     <Compile Include="DependencyParser\IParser.cs" />
     <Compile Include="DependencyParser\StanfordDependecyParser.cs" />
     <Compile Include="FactoryClass.cs" />
